@@ -1,0 +1,17 @@
+to visit site and login check out:
+
+
+/// <reference types="cypress" />
+
+describe('AEON', function () {
+
+    it('Login', function () {
+        cy.visit('http://13.233.79.8/wp-login.php')
+        cy.get('#user_login').clear();
+        cy.get('#user_login').type('sujata@gmail.com');
+        cy.get('#user_pass').clear();
+        cy.get('#user_pass').type('suja$#skdjakjsd');
+        cy.get('#wp-submit').click();
+    })
+
+})
